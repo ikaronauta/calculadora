@@ -283,7 +283,9 @@ document.getElementById('igual').addEventListener('click', function () {
 			numeros = [];
 			numeros.push(resultadoParcial);
 
-			document.getElementById('pantalla').innerText = resultadoParcial.toExponential(3);
+			document.getElementById('pantalla').innerText = Math.abs(resultadoParcial) < 1e9 && Math.abs(resultadoParcial) >= 1e-6 
+				? resultadoParcial.toString() 
+				: resultadoParcial.toExponential(3);
 		}
 	}
 
@@ -294,7 +296,9 @@ document.getElementById('igual').addEventListener('click', function () {
 			numeros = [];
 			numeros.push(resultadoParcial);
 
-			document.getElementById('pantalla').innerText = resultadoParcial.toExponential(3);
+			document.getElementById('pantalla').innerText = Math.abs(resultadoParcial) < 1e9 && Math.abs(resultadoParcial) >= 1e-6 
+				? resultadoParcial.toString() 
+				: resultadoParcial.toExponential(3);
 		}
 	}
 
@@ -305,7 +309,9 @@ document.getElementById('igual').addEventListener('click', function () {
 			numeros = [];
 			numeros.push(resultadoParcial);
 
-			document.getElementById('pantalla').innerText = resultadoParcial.toExponential(3);
+			document.getElementById('pantalla').innerText = Math.abs(resultadoParcial) < 1e9 && Math.abs(resultadoParcial) >= 1e-6 
+				? resultadoParcial.toString() 
+				: resultadoParcial.toExponential(3);
 		}
 	}
 
@@ -316,7 +322,9 @@ document.getElementById('igual').addEventListener('click', function () {
 			numeros = [];
 			numeros.push(resultadoParcial);
 
-			document.getElementById('pantalla').innerText = resultadoParcial.toExponential(3);
+			document.getElementById('pantalla').innerText = Math.abs(resultadoParcial) < 1e9 && Math.abs(resultadoParcial) >= 1e-6 
+				? resultadoParcial.toString() 
+				: resultadoParcial.toExponential(3);
 		}
 	}
 
