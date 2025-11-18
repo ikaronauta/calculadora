@@ -2,10 +2,13 @@
 let operacionActual = '';
 let resultadoParcial = 0;
 let numeros = [];
+let beep = new Audio('beep.mp3');
 
 
 document.querySelectorAll('.numero').forEach(function (element) {
 	element.addEventListener('click', function () {
+
+		beep.play();
 
 		if (operacionActual === 'igual') {
 
@@ -19,6 +22,8 @@ document.querySelectorAll('.numero').forEach(function (element) {
 
 document.getElementById('borrar').addEventListener('click', function () {
 
+	beep.play();
+
 	operacionActual = '';
 	numeros = [];
 
@@ -26,6 +31,8 @@ document.getElementById('borrar').addEventListener('click', function () {
 });
 
 document.getElementById('suma').addEventListener('click', function () {
+
+	beep.play();
 
 	if(document.getElementById('pantalla').innerText == '') return;
 
@@ -88,6 +95,8 @@ document.getElementById('suma').addEventListener('click', function () {
 
 document.getElementById('resta').addEventListener('click', function () {
 	
+	beep.play();
+
 	if(document.getElementById('pantalla').innerText == '') return;
 
 	if (operacionActual == 'igual') {
@@ -149,6 +158,8 @@ document.getElementById('resta').addEventListener('click', function () {
 
 document.getElementById('multi').addEventListener('click', function () {
 	
+	beep.play();
+
 	if(document.getElementById('pantalla').innerText == '') return;
 
 	if (operacionActual == 'igual') {
@@ -209,6 +220,8 @@ document.getElementById('multi').addEventListener('click', function () {
 });
 
 document.getElementById('div').addEventListener('click', function () {
+
+	beep.play();
 
 	if(document.getElementById('pantalla').innerText == '') return;
 
@@ -271,6 +284,8 @@ document.getElementById('div').addEventListener('click', function () {
 
 document.getElementById('igual').addEventListener('click', function () {
 
+	beep.play();
+	
 	if(document.getElementById('pantalla').innerText == '') return;
 
 	let numeroActual = parseInt(document.getElementById('pantalla').innerText);
